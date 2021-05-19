@@ -11,7 +11,7 @@ print(enddate)
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
-APIKEY = 'OSzEh7RFIcEKdqLWra0wneWnST2fBeAM'
+APIKEY = None #Insert API Key here
 fields = ['Technology', 'Medical', 'Economics', 'Politics', 'Environment', 'Sports']
 data = {'q':'Medical','fq':'source:{"The Guardian"}','facet_fields':'source','facet': 'true',
 'begin_date': '20201201', 'end_date': enddate,'api-key' : APIKEY}
